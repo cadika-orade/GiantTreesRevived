@@ -1,0 +1,43 @@
+name: Giant Trees Revived
+main: io.github.cadika_orade.GiantTreesRevived
+version: 0.4.3
+commands:
+  gianttree:
+    aliases: [gt, gtree]
+    description: A tool that lets you create giant trees
+    usage: |
+           /gt
+permissions:
+    gianttrees.*:
+        description: Gives access to all Giant Trees commands
+        children:
+            gianttrees.build: true
+            gianttrees.grow: true
+            gianttrees.undoall: true
+            gianttrees.reload: true
+            gianttrees.nolimit: true
+            gianttrees.custom: true
+            gianttrees.customdangerous: true
+    gianttrees.build:
+        description: Allows a user to build a Giant Tree
+        default: op
+    gianttrees.grow:
+        description: Allows a user to grow a Giant Tree
+        default: op
+    gianttrees.undoall:
+        description: User can undo any tree, even if they didn't create it
+        default: op
+    gianttrees.reload:
+        description: User can reload the config
+        default: op
+    gianttrees.nolimit:
+        description: User is not bound to the limit set in the config
+        default: op
+    gianttrees.custom:
+        description: User can build custom block trees
+        default: op
+    gianttrees.customdangerous:
+        description: User can build dangerous custom block trees (ex. lava)
+        default: op
+        children:
+            gianttrees.custom: true
