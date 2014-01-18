@@ -1,5 +1,5 @@
 name: Giant Trees Revived
-main: io.github.cadika_orade.GiantTreesRevived
+main: io.github.cadika_orade.GiantTreesRevived.GiantTreesRevived
 version: 0.4.3
 commands:
   gianttree:
